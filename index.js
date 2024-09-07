@@ -1,22 +1,22 @@
-//define the libraries
+//define as bibliotecas
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
-//when its ready log it
-client.on("ready", ()=>console.log("READY"));
-//define welcome "package"
+//quando estiver pronto, registra no log
+client.on("ready", ()=>console.log("PRONTO"));
+//define o "pacote" de boas-vindas
 const welcome = require("./welcome");
 welcome(client);
-//start the bot
+//inicia o bot
 client.login(config.TOKEN);
 
-//NOTE:
+//NOTA:
 /*
-THis is the config.json File
+Este é o arquivo config.json
 
-"TOKEN"           ... is your Bot token
-"CHANNEL_WELCOME" ... is the Channel ID of your welcome channel
-"ROLES_WELCOME"   ... are all of the Role IDs you wanna add to the user when he joins the server, it must be an array and can be unlimited!
+"TOKEN"           ... é o token do seu bot
+"CHANNEL_WELCOME" ... é o ID do canal de boas-vindas
+"ROLES_WELCOME"   ... são todos os IDs de cargos que você deseja adicionar ao usuário quando ele entrar no servidor, deve ser um array e pode ser ilimitado!
 
 {
   "TOKEN":  "",
