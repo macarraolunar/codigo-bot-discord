@@ -49,4 +49,4 @@ client.login(config.TOKEN);                    //inicia o bot com o token do bot
   
 ## FACHINELLO
 
-> Considere me seguir nas redes sociais fachinello.glitch.me
+> Considere me seguir nas redes sociais (fachinello.glitch.me)
